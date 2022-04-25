@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+.ir_so {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.inner {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+
+.inner::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header .login-area {
+  margin: 0 0 40px 0;
+  text-align: right;
+  font-size: 0;
+}
+
+.header .login-area a {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 10px 0 0;
+  padding: 0 10px 0 0;
+}
+
+.header .login-area a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  width: 1px;
+  height: 12px;
+  background-color: #000;
+}
+
+.header .login-area a:last-child {
+  margin: 0;
+  padding: 0;
+}
+
+.header .login-area a:last-child::after {
+  content: none;
+}
+
+.header .logo {
+  float: left;
+  background-image: url('../header-part-1/logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 140px;
+  height: 32px;;
+}
+
+.header .gnb {
+  float: left;
+  margin: 0 0 0 40px;
+}
+
+.header .gnb-list::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header .gnb-list > li {
+  float: left;
+}
+
+.header .gnb-list > li > a {
+  line-height: 32px;
+  font-size: 18px;
+  margin: 0 28px 0 0;
+}
+
+.header .gnb-list > li:last-child > a {
+  margin: 0;
+}
+
+/* 햄버거 메뉴 */
+.header .hbg-btn-area {
+  display: none;
+} /* end 햄버거 메뉴 */
+
+.header .user-area {
+  float: right;
+}
+
+.header .user-area fieldset {
+  position: relative;
+}
+
+.header .user-area input[type="text"] {
+  width: 210px;
+  height: 32px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  padding: 0 10px;
+  outline: none;
+}
+
+.header .user-area .search-contents {
+  float: left;
+}
+
+.header .user-area .search-btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  width: 18px;
+  height: 18px;
+  background-image: url('../header-part-1/btn_search.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.header .my-products {
+  float: left;
+  margin: 0 0 0 20px;
+}
+
+.header .my-products a {
+  float: left;
+  width: 25px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.header .my-products a + a {
+  margin: 0 0 0 14px;
+}
+
+.header .my-products .profile {
+  background-image: url('../header-part-1/ico_profile.png');
+}
+
+.header .my-products .cart {
+  background-image: url('../header-part-1/icon_cart.png');
+}
+
+.header .my-products .delivery {
+  background-image: url('../header-part-1/icon_delivery.png');
+  width: 37px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1320px) {
+  .inner {
+    text-align: center;
+  }
+
+  .header .login-area {
+    display: none;
+  }
+
+  .header .logo {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .header .gnb {
+    display: none;
+  }
+
+  .header .hbg-btn-area {
+    display: block;
+    float: right;
+    width: 32px;
+    height: 32px;
+    width: 40px;
+    padding: 5px;
+  }
+
+  .header .hbg-btn-area span {
+    width: 100%;
+    height: 2px;
+    display: block;
+    margin: 0 0 6px 0;
+    background-color: #000;
+  }
+
+  .header .hbg-btn-area span:last-child {
+    margin: 0;
+  }
+
+  .header .user-area {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1023px) {
+  .inner {
+    padding: 20px;
+  }
+
+  .header .login-area {
+    display: none;
+  }
+
+  .header .logo {
+    width: 100px;
+  }
+
+  .header .gnb {
+    display: none;
+  }
+
+  .header .hbg-btn-area {
+    display: block;
+    float: right;
+    width: 32px;
+    height: 32px;
+    width: 40px;
+    padding: 5px;
+  }
+
+  .header .hbg-btn-area span {
+    width: 100%;
+    height: 2px;
+    display: block;
+    margin: 0 0 6px 0;
+    background-color: #000;
+  }
+
+  .header .hbg-btn-area span:last-child {
+    margin: 0;
+  }
+
+  .header .user-area {
+    display: none;
+  }
+}
