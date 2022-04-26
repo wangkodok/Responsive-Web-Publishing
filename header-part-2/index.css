@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+.ir_so {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #eee;
+}
+
+.inner {
+  height: 100%;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  height: 96px;
+  background-color: #000;
+}
+
+.header .contents {
+  position: relative;
+  height: 100%;
+}
+
+.header .nav-map {
+  position: absolute;
+  left: 0;
+}
+
+.header .logo {
+  float: left;
+  width: 129px;
+  height: 48px;
+  background-image: url('../header-part-2/logo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header .gnb,
+.header .gnb-list > li {
+  float: left;
+}
+
+.header .gnb {
+  margin: 0 0 0 24px;
+}
+
+.header .gnb-list::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header .gnb-list > li > a {
+  color: #fff;
+  line-height: 48px;
+  font-size: 18px;
+  margin: 0 16px 0 0;
+}
+
+.header .user-util {
+  position: absolute;
+  right: 0;
+}
+
+.header .user-util > div,
+.header .user-util a {
+  float: left;
+}
+
+.header .user-util .info,
+.header .user-util .login {
+  padding: 0 12px 0 0;
+  margin: 0 16px 0 0;
+}
+
+.header .user-util .info a,
+.header .user-util .login a {
+  margin: 0 20px 0 0;
+  color: #fff;
+  font-size: 14px;
+  line-height: 48px;
+}
+
+.header .user-util .info a:last-child,
+.header .user-util .login a:last-child {
+  margin: 0;
+}
+
+.header .user-util .info {
+  position: relative;
+}
+
+.header .user-util .info::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  width: 1px;
+  height: 12px;
+  background-color: #fff;
+}
+
+.header .user-info a {
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header .user-info .cart {
+  background-image: url('../header-part-2/cart.svg');
+}
+
+.header .user-info .all-menu {
+  background-image: url('../header-part-2/menu.svg');
+}
+
+/* 브라우저 최소 1280px 까지 */
+@media screen and (min-width: 1280px) {
+  
+}
+
+/* 브라우저 최대 1279px부터 최소 1024px까지 */
+@media screen and (max-width: 1279px) and (min-width: 762px) {
+  .inner {
+    max-width: none;
+  }
+  
+  .header .gnb-list, 
+  .header .user-util .info,
+  .header .user-util .login {
+    display: none;
+  }
+}
+
+/* 브라우저 최대 1023px부터 */
+@media screen and (max-width: 761px) {
+  .inner {
+    padding: 16px;
+  }
+
+  .header .gnb-list, 
+  .header .user-util .info,
+  .header .user-util .login {
+    display: none;
+  }
+
+  .header {
+    height: 56px;
+  }
+
+  .header .logo {
+    height: 28px;
+  }
+
+  .header .nav-map,
+  .header .user-util {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  .header .user-info a {
+    width: 36px;
+    height: 36px;
+  }
+}
