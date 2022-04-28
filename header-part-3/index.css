@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+/* input 태그 초기화 */
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 공통 셀렉터 1개 ~ 2개 */
+.inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 32px;
+  box-sizing: border-box;
+}
+
+.header .logo,
+.header .all-menu,
+.header .nav-gnb,
+.header .sns-ch {
+  float: left
+}
+/* end 공통 셀렉터 */
+
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #84b8e1e6;
+  height: 100px;
+}
+
+.header .contents::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header .nav-map {
+  float: left;
+}
+
+.header .user-util {
+  float: right;
+  margin: 38px 0 0 0;
+}
+
+.header .nav-map::after,
+.header .user-util::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header .logo {
+  background-image: url('../header-part-3/logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 88px;
+  height: 100px;
+}
+
+.header .m-logo {
+  display: none;
+  float: left;
+  background-image: url('../header-part-3/m-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 263px;
+  /* height: 100px; */
+  padding-top: 11.961722%;
+}
+
+.header .all-menu {
+  background-image: url('../header-part-3/icon_all_menu.png');
+  background-repeat: no-repeat;
+  background-size: 38px auto;
+  background-position: left center;
+  /* height: 100px; */
+  margin: 38px 0 0 30px;
+  padding: 0 0 0 52px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.header .m-all-menu {
+  display: none;
+  float: right;
+  background-image: url('../header-part-3/icon_m-all_menu.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  background-size: 24px;
+
+  width: 45px; /* 가로 픽셀 */
+  width: 5.382775%; /* 가로 퍼센트 계산 */
+  height: 45px; /* 세로 픽셀 */
+  padding-top: 5.382775%; /* 세로 픽셀 */
+  height: 0; /* 세로 픽셀 초기화 */
+  border: 1px solid #000;
+  transform: translate(0, 27px);
+}
+
+.header .gnb-list::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header .gnb-list > li {
+  position: relative;
+  float: left;
+}
+
+.header .gnb-list > li + li::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translate(0, -50%);
+  background-color: #fff;
+  width: 1px;
+  height: 12px;
+}
+
+.header .gnb-list > li > a {
+  font-size: 18px;
+  color: #fff;
+}
+
+.header .gnb-list > li + li > a {
+  margin: 0 0 0 30px;
+}
+
+.header .sns-ch {
+  transform: translate(0px, 5px);
+}
+
+.header .sns-list::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.header .sns-list > li {
+  float: left;
+  margin: 0 0 0 20px;
+}
+
+.header .sns-list > li > a {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+}
+
+.header .sns-list > li > .instagram {
+  background-image: url('../header-part-3/icon_instagram.png');
+}
+
+.header .sns-list > li > .youtube {
+  background-image: url('../header-part-3/icon_youtube.png');
+}
+
+.header .sns-list > li > .facebook {
+  background-image: url('../header-part-3/icon_facebook.png');
+}
+
+.header .sns-list > li > .naver_tv {
+  background-image: url('../header-part-3/icon_naver_tv.png');
+}
+
+.header .sns-list > li > .kakao_ch {
+  background-image: url('../header-part-3/icon_kakao_ch.png');
+}
+
+.main .visual-slide-list > li {
+  background-image: url('../header-part-3/visual_slide_test.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+@media screen and (max-width: 900px) {
+  .header .logo,
+  .header .all-menu,
+  .header .user-util {
+    display: none;
+  }
+
+  .header .nav-map {
+    float: none;
+  }
+
+  .header .m-logo,
+  .header .m-all-menu {
+    display: block;
+  }
+
+  .header {
+    padding-top: 11.111111%;
+    height: 0;
+  }
+
+  .header .inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 764px) {
+  .header {
+    height: 60px;
+    padding-top: 0;
+  }
+
+  .header .inner {
+    padding: 0 16px;
+  }
+  .header .contents {
+    position: relative;
+  }
+
+  .header .m-logo {
+    display: block;
+    width: 200px;
+    height: 60px;
+    padding-top: 0;
+  }
+
+  .header .m-all-menu {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    width: 38px;
+    height: 38px;
+    padding-top: 0;
+    background-size: 18px;
+  }
+}
