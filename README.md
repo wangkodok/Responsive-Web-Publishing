@@ -15,4 +15,7 @@
 [매스티나 온라인 공식몰](https://wangkodok.github.io/Responsive-Web-Publishing/header-part-1/layout-media-test.html "매스티나 온라인 공식몰")
 
 - main(contents)
+
+[맑은소프트](https://wangkodok.github.io/Responsive-Web-Publishing/main-part-1/index.html "맑은소프트")
+
 - footer
