@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+/* 
+  폰트명 : 스포카한산스네오
+*/
+
+@font-face {
+  font-family: 'Spoqa Han Sans Neo Thin';
+  src: url('../main-part-1/SpoqaHanSansNeo-Thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans Neo Light';
+  src: url('../main-part-1/SpoqaHanSansNeo-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans Neo Regular';
+  src: url('../main-part-1/SpoqaHanSansNeo-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans Neo Medium';
+  src: url('../main-part-1/SpoqaHanSansNeo-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans Neo Bold';
+  src: url('../main-part-1/SpoqaHanSansNeo-Bold.woff') format('woff');
+}

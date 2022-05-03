@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+/* 공통 CSS */
+body {
+  letter-spacing: -1px;
+}
+
+.inner {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.container .tit {
+  font-size: 38px;
+  font-family: 'Spoqa Han Sans Neo Thin', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 56px 0;
+  transition: all 0.5s ease;
+}
+
+.container .tit .black,
+.container .tit .color {
+  font-family: 'Spoqa Han Sans Neo Bold', sans-serif;
+}
+
+.container .tit .black {
+  color: #000;
+}
+
+.container .tit .color {
+  color: #0eb3d3;
+}
+/* end 공통 CSS */
+
+.partner {
+  background-color: #eff6f8;
+}
+
+.partner .inner {
+  padding: 150px 0;
+  transition: padding 0.5s ease;
+}
+
+.partner-list::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.partner-list > li {
+  position: relative;
+  top: 0;
+  width: calc(25% - 28px);
+  margin: 14px;
+  float: left;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 32px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.partner-list > li:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  top: -20px;
+}
+
+.partner-list figure img {
+  width: 100%;
+}
+
+.partner-list figure figcaption {
+  font-size: 17px;
+  padding: 32px;
+  border-top-width: 1px;
+  border-top-style: dotted;
+  border-top-color: #d8d9dc;
+  transition: all 0.5s ease;
+}
+
+@media screen and (min-width: 1048px) {
+
+  /* Desktop */
+  .partner-list > li {
+    width: calc(25% - 20px);
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1047px) {
+
+  /* Tablet */
+  .container .tit {
+    font-size: 36px;
+  }
+  
+  .partner .inner {
+    padding: 110px 0;
+  }
+
+  .partner-list {
+    margin: 0 12px;
+  }
+
+  .partner-list > li {
+    width: calc(25% - 20px);
+    margin: 10px;
+  }
+
+  .partner-list figure figcaption {
+    letter-spacing: -0.7px;
+    line-height: 1.4;
+    font-size: 14px;
+    padding: 24px 10px 0;
+    height: 60px;
+  }
+
+  .partner-list figure figcaption br {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 680px) and (max-width: 767px) {
+
+  /* Tablet */
+  .container .tit {
+    font-size: 32px;
+  }
+
+  .partner .inner {
+    padding: 110px 0;
+  }
+
+  .partner-list figure figcaption {
+    letter-spacing: -0.7px;
+    line-height: 1.4;
+    font-size: 14px;
+    padding: 14px;
+    height: 60px;
+  }
+
+  .partner-list figure figcaption br {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 679px) {
+
+  /* Mobile */
+  .container .tit {
+    margin: 0 0 30px 0;
+    font-size: 32px;
+  }
+
+  .partner .inner {
+    padding: 60px 0;
+  }
+
+  .partner-list > li {
+    width: calc((100% / 2) - 28px);
+  }
+
+  .partner-list figure figcaption {
+    padding: 14px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+
+  /* Mobile */
+  body {
+    min-width: 320px;
+  }
+
+  .container .tit {
+    margin: 0 0 30px 0;
+    font-size: 22px;
+  }
+  
+  .partner .inner {
+    padding: 60px 0;
+  }
+
+  .partner-list > li {
+    width: calc((100% / 2) - 12px);
+    margin: 6px;
+  }
+
+  .partner-list figure figcaption {
+    padding: 15px 10px 0;
+    font-size: 13px;
+    height: 64px;
+  }
+
+  .partner-list figure figcaption br {
+    display: none;
+  }
+}
