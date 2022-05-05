@@ -16,6 +16,8 @@
 
 - main(contents)
 
+[광주과학기술원](https://wangkodok.github.io/Responsive-Web-Publishing/main-part-2/index.html "광주과학기술원")
+
 [맑은소프트](https://wangkodok.github.io/Responsive-Web-Publishing/main-part-1/index.html "맑은소프트")
 
 - footer
