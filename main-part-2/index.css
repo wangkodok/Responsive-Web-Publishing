@@ -1,0 +1,301 @@
+@charset "utf-8";
+
+/* 
+  font-family: 'Nanum Myeongjo', serif; 나눔 명조
+  font-family: 'Noto Sans KR', sans-serif; 본 고딕 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* 공통 */
+.content-inner {
+  max-width: 1200px;
+  /* padding: 0 20px; */
+  margin: 0 auto;
+}
+
+.conainer .tit,
+.now-list .item {
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+.now {
+  width: 100%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.conainer .tit {
+  position: absolute;
+  top: -30px;
+  left: 25px;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: -3px;
+}
+/* end 공통 */
+
+
+
+
+
+.now .content-inner {
+  position: relative;
+  /* padding: 0px 20px 0; */
+  margin: 100px auto 0 auto;
+}
+
+.now-area {
+  position: relative;
+  height: 324px;
+  height: 257px;
+}
+
+.now-list {
+  margin: 0px 0 0 190px;
+}
+
+.now-list::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.now-list>li {
+  float: left;
+}
+
+.now-list .item {
+  padding: 0 10px 12px;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.now-list .item.point {
+  position: relative;
+  color: #df3127;
+}
+
+.now-list .item.point::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #df3127;
+}
+
+.now-list-item {
+  display: none;
+  position: absolute;
+  top: 62px;
+  left: 0;
+}
+
+.now-list-item.on {
+  display: block;
+}
+
+.now-list-item li {
+  position: relative;
+  float: left;
+  padding: 10px 0 5px 0;
+  margin: 0 0 0 54px;
+}
+
+.now-list-item li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border-right-style: dashed;
+  border-right-width: 1px;
+  border-right-color: #ddd;
+}
+
+.now-list-item li:nth-child(2n)::after {
+  content: none;
+}
+
+.now-list-item a {
+  position: relative;
+  width: 492px;
+  height: 50px;
+  overflow: hidden;
+}
+
+.now-list-item p {
+  padding: 0 94px 0 0;
+  font-size: 17px;
+  line-height: 25px;
+  letter-spacing: -1px;
+}
+
+.now-list-item time {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  font-size: 15px;
+  letter-spacing: -1px;
+  font-family: 'Noto Sans KR';
+  color: #666;
+}
+
+.page-move-area {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.page-move {
+  display: none;
+  position: absolute;
+  top: 62px;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  border: 1px dotted #666;
+  box-sizing: border-box;
+}
+
+.page-move:hover .plus {
+  top: 0;
+  right: 0;
+}
+
+.page-move.on {
+  display: block;
+}
+
+.page-move .more-txt {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  font-size: 13px;
+}
+
+.page-move .plus {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 76px;
+  height: 76px;
+  transition: all 0.5s ease;
+}
+
+.page-move .plus span:nth-child(1) {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 100%;
+  height: 1px;
+  background-color: #df3127;
+}
+
+.page-move .plus span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 1px;
+  height: 100%;
+  background-color: #df3127;
+}
+
+@media screen and (min-width: 1041px) and (max-width: 1280px) {
+  .now .content-inner {
+    max-width: 1000px;
+  }
+
+  .now-list-item li {
+    margin: 0 0 0 45px;
+  }
+
+  .now-list-item a {
+    width: 410px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1040px) {
+  .now .content-inner {
+    max-width: 768px;
+    padding: 0 24px;
+  }
+
+  .now-list-item li {
+    margin: 0 0 0 35px;
+    width: calc(50% - 35px);
+  }
+
+  .now-list-item a {
+    width: 100%;
+  }
+
+  .page-move {
+    top: -58px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  body {
+    min-width: 320px;
+  }
+
+  .now {
+    overflow: hidden;
+  }
+
+  .now .content-inner {
+    padding: 0 14px;
+  }
+
+  .conainer .tit {
+    position: static;
+  }
+
+  .now-area {
+    height: 451px;
+  }
+
+  .now-list {
+    margin: initial;
+  }
+
+  .now-list>li {
+    width: 20%;
+    text-align: center;
+  }
+
+  .now-list .item {
+    display: inline-block;
+    margin: initial;
+    font-size: 16px;
+  }
+
+  .now-list-item {
+    text-align: initial;
+  }
+
+  .now-list-item li {
+    margin: initial;
+    float: none;
+  }
+
+  .now-list-item li::after {
+    content: none;
+  }
+
+  .now-list-item a {
+    width: 100%;
+  }
+
+  .page-move {
+    width: 90px;
+    height: 90px;
+    top: -128px;
+    right: 0;
+  }
+}
