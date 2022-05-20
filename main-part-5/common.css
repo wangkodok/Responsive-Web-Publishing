@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+/* 공통 레이아웃 */
+.content-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px 20px;
+}
+
+.user .content-inner {
+  padding: 40px 20px;
+}
+
+.video-news,
+.news,
+.user-content {
+  float: left;
+}
+
+.book,
+.nation-info,
+.notice {
+  float: right;
+}
+
+/* 끝 - 공통 레이아웃 */
+
+
+
+
+
+/* 스타일 공통 */
+img {
+  width: 100%;
+}
+
+.main-content section {
+  position: relative;
+}
+
+.main-content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.main-content .layout-area {
+  margin: 24px 0 0 0;
+}
+
+.main-content .more {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 14px;
+  padding: 6px 16px;
+  border: 1px solid #9a9a9a;
+}
+
+.main-content .arrow {
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid #a1a1a1;
+  border-right: 2px solid #a1a1a1;
+  display: inline-block;
+  transform: rotate(45deg) translate(0, -50%);
+  position: absolute;
+  top: 50%;
+  right: 60px;
+}
+
+/* 텍스트 라인 hover */
+.main-content .thum a p:hover,
+.news .desc p:hover,
+.notice-list a:hover {
+  text-decoration: underline;
+}
+
+/* clear: both */
+.content-inner::after,
+.video-news-list::after,
+.book-list::after,
+.news .layout-area::after,
+.user .user-list::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* 끝 - 스타일 공통 */
+
+@media screen and (max-width: 1300px) and (min-width: 1241px) {
+
+}
+
+@media screen and (max-width: 1240px) and (min-width: 1041px) {
+
+}
+
+@media screen and (max-width: 1040px) and (min-width: 769px) {
+  .content-inner, 
+  .user .content-inner {
+    padding: initial;
+  }
+
+  .video-news,
+  .news,
+  .user-content {
+    float: none;
+  }
+  
+  .book,
+  .nation-info,
+  .notice {
+    float: none;
+  }
+  
+  .main-content h3 {
+    font-size: 20px;
+  }
+
+  .main-content .more {
+    top: 30px;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 561px) {
+  .content-inner, 
+  .user .content-inner {
+    padding: initial;
+  }
+
+  .video-news,
+  .news,
+  .user-content {
+    float: none;
+  }
+  
+  .book,
+  .nation-info,
+  .notice {
+    float: none;
+  }
+  
+  .main-content h3 {
+    font-size: 20px;
+  }
+
+  .main-content .more {
+    top: 30px;
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 560px) and (min-width: 0px) {
+  .content-inner, 
+  .user .content-inner {
+    padding: initial;
+  }
+
+  .video-news,
+  .news,
+  .user-content {
+    float: none;
+  }
+  
+  .book,
+  .nation-info,
+  .notice {
+    float: none;
+  }
+  
+  .main-content h3 {
+    font-size: 20px;
+  }
+
+  .main-content .more {
+    top: 30px;
+    right: 20px;
+  }
+}
