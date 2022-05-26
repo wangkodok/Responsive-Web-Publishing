@@ -2,6 +2,16 @@
 =============
 **비상업적으로 사용되고 있는 작업물(포트폴리오)이며, 취업하는 용도로만 제작되었습니다.**
 
+## 내용 요약
+
+- 콘텐츠 영역을 나눠서 반응형 웹으로 제작
+
+- 웹 표준 준수
+
+- 시맨틱 마크업으로 작성
+
+- float, position, flexbox, grid 활용
+
 ## header
 
 - [신시웨이](https://wangkodok.github.io/Responsive-Web-Publishing/header-part-5/index.html "신시웨이")
