@@ -1,0 +1,255 @@
+@charset "utf-8";
+
+.section-software {
+  background-image: url('../main-part-6/software_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 490px;
+}
+
+.section-software .br-mobile {
+  display: none;
+}
+
+.section-software-list {
+  position: relative;
+  top: -150px;
+}
+
+.software-list {
+  display: flex;
+  box-shadow: 6px 8px 26px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.software-list .item {
+  width: calc(100% / 3);
+  text-align: center;
+  padding: 40px 20px 20px;
+  box-sizing: border-box;
+  border-right: 1px solid #efefef;
+}
+
+.software-list .item:last-child {
+  border-right: none;
+}
+
+.software-list .item p, 
+.software-list .item em {
+  font-size: 14px;
+}
+
+.software-list .item .icon {
+  position: relative;
+  display: inline-block;
+  margin: 0 0 24px 0;
+  vertical-align: top;
+  width: 137px;
+  height: 137px; 
+  border-radius: 50%;
+}
+
+.software-list .item .icon::after {
+  content: '';
+  width: 137px;
+  height: 137px;
+}
+
+.software-list .item .icon.freelicense {
+  background-color: #02a8b4;
+}
+
+.software-list .item .icon.structuraldesign {
+  background-color: #00c191;
+}
+
+.software-list .item .icon.ecosystem {
+  background-color: #81c615;
+}
+
+.software-list .item .icon.freelicense::after {
+  background-image: url('../main-part-6/icon_software_freelicense.png');
+}
+
+.software-list .item .icon.structuraldesign::after {
+  background-image: url('../main-part-6/icon_software_structuraldesign.png');
+}
+
+.software-list .item .icon.ecosystem::after {
+  background-image: url('../main-part-6/icon_software_ecosystem.png');
+}
+
+.software-list .item .icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.software-list .item strong {
+  display: block;
+  font-size: 22px;
+  margin: 0 0 14px 0;
+}
+
+.software-list .item em {
+  display: block;
+  margin: 8px 0 0 0;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .section-software-list {
+    top: -100px;
+  }
+
+  .software-list {
+    flex-direction: column;
+  }
+  
+  .software-list .item {
+    display: flex;
+    align-items: center;
+    text-align: initial;
+    width: calc(100% / 1);
+    padding: 36px;
+    border-right: none;
+    border-bottom: 1px solid #efefef;
+  }
+
+  .software-list .item .txt-area {
+    padding: 0 0 0 34px;
+  }
+
+  .software-list .item .icon {
+    width: 110px;
+    height: 110px;
+    margin: 0;
+  }
+
+  .software-list .item .icon::after {
+    width: 100px;
+    height: 100px;
+  }
+
+  .software-list .item em {
+    margin: 0;
+    font-size: 12px;
+    color: #7a7a7a;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .section-software {
+    background-position: top -120px left -560px;
+  }
+  
+  .section-software-list {
+    top: -160px;
+  }
+
+  .section-software .br-mobile {
+    display: block;
+  }
+
+  .software-list {
+    flex-direction: column;
+  }
+  
+  .software-list .item {
+    display: flex;
+    align-items: center;
+    text-align: initial;
+    width: calc(100% / 1);
+    padding: 36px;
+    border-right: none;
+    border-bottom: 1px solid #efefef;
+  }
+
+  .software-list .item .txt-area {
+    padding: 0 0 0 34px;
+  }
+
+  .software-list .item .icon {
+    width: 110px;
+    height: 110px;
+    margin: 0;
+  }
+
+  .software-list .item .icon::after {
+    width: 100px;
+    height: 100px;
+  }
+
+  .software-list .item em {
+    margin: 0;
+    font-size: 12px;
+    color: #7a7a7a;
+  }
+}
+
+@media screen and (max-width: 480px) and (min-width: 0px) {
+  body {
+    min-width: 320px;
+  }
+
+  .section-software {
+    background-position: top -120px left -560px;
+  }
+
+  .section-software-list {
+    top: -160px;
+  }
+
+  .section-software .br-mobile {
+    display: block;
+  }
+
+  .software-list {
+    flex-direction: column;
+  }
+  
+  .software-list .item {
+    display: flex;
+    align-items: center;
+    text-align: initial;
+    width: calc(100% / 1);
+    padding: 24px 10px;
+    border-right: none;
+    border-bottom: 1px solid #efefef;
+  }
+
+  .software-list .item .txt-area {
+    padding: 0 0 0 14px;
+  }
+
+  .software-list .item .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0;
+  }
+
+  .software-list .item .icon::after {
+    width: 60px;
+    height: 60px;
+  }
+
+  .software-list .item p, .software-list .item em {
+    font-size: 13px;
+  }
+
+  .software-list .item em {
+    margin: 0;
+    color: #7a7a7a;
+  }
+
+  .software-list .item strong {
+    font-size: 16px;
+    margin: 0 0 8px 0;
+  }
+}
