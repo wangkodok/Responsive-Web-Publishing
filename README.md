@@ -26,6 +26,8 @@
 
 ## main(contents)
 
+- [메타커머스](https://wangkodok.github.io/Responsive-Web-Publishing/main-part-6/index.html "메타커머스")
+
 - [KOTRA 해외시장뉴스](https://wangkodok.github.io/Responsive-Web-Publishing/main-part-5/index.html "KOTRA 해외시장뉴스")
 
 - [롯데이네오스화학](https://wangkodok.github.io/Responsive-Web-Publishing/main-part-4/index.html "롯데이네오스화학")
