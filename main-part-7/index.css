@@ -1,0 +1,316 @@
+@charset "utf-8";
+
+/* 
+  CSS 선언 순서
+    1. display (표시)
+    2. overflow (넘침)
+    3. float (흐름)
+    4. position (위치)
+    5. width/height (크기)
+    6. padding/margin (간격)
+    7. border (테두리)
+    8. background (배경)
+    9. color/font (글꼴)
+    10. animation
+    11. 기타
+*/
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  letter-spacing: -0.5px;
+  word-break: keep-all;
+}
+
+.content-inner {
+  max-width: 1300px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+
+.brand-intro {
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.brand-intro .content-inner {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 880px;
+}
+
+.brand-intro .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 0 30px;
+}
+
+.brand-intro .title-area {
+  margin: 0 0 40px 0;
+}
+
+.brand-intro span {
+  font-size: 20px;
+  color: #9cbb28;
+}
+
+.brand-intro h3 {
+  font-size: 50px;
+}
+
+.brand-intro .desc {
+  color: #636363;
+}
+
+.brand-intro .more-area {
+  margin: 40px 0 0 0;
+}
+
+.brand-intro .more {
+  display: inline-block;
+  padding: 0 16px 4px 0;
+  border-bottom: 1px solid #000;
+  background-image: url('../main-part-7/icon_plus.png');
+  background-repeat: no-repeat;
+  background-size: 11px;
+  background-position: right top calc(50% - 2px);
+  font-weight: 700;
+}
+
+.brand-intro .list-area {
+  margin: 52px 0 0 0;
+}
+
+.brand-intro .list {
+  display: flex;
+}
+
+.brand-intro .list-item {
+  width: 252px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 3px 2px 15px 2px rgba(0, 0, 0, 0.20);
+}
+
+.brand-intro .list-item+.list-item {
+  margin: 0 0 0 20px;
+}
+
+.brand-intro .list-item span {
+  display: inline-block;
+  width: 100%;
+  height: 156px;
+  background-repeat: no-repeat;
+  background-size: 207px;
+  background-position: center;
+}
+
+.brand-intro .list-item .material {
+  background-image: url('../main-part-7/pictogram_item_material.jpg');
+}
+
+.brand-intro .list-item .gravy {
+  background-image: url('../main-part-7/pictogram_item_gravy.jpg');
+}
+
+.brand-intro .list-item .complete {
+  background-image: url('../main-part-7/pictogram_item_complete.jpg');
+}
+
+.brand-intro .list-item .text-area {
+  margin: 20px 0 0 0;
+}
+
+.brand-intro .list-item strong {
+  display: inline-block;
+  padding: 1px 20px;
+  margin: 0 0 10px 0;
+  border-radius: 21px;
+  background-color: #9cbb28;
+  font-size: 20px;
+  color: #fff;
+}
+
+.brand-intro .list-item p {
+  color: #666;
+}
+
+.brand-intro .product {
+  margin: 0 0 0 34.846153%;
+  /* margin-left: 34.846153%; */
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1025px) {
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .brand-intro {
+    padding: 40px 0;
+  }
+
+  .content-inner {
+    padding: 0 10px;
+  }
+
+  .brand-intro .content-inner {
+    position: static;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    height: auto;
+  }
+
+  .brand-intro .product {
+    margin: 0;
+  }
+
+  .brand-intro .product img {
+    width: 100%;
+  }
+
+  .brand-intro .content {
+    position: static;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    padding: 0;
+    margin: 48px 0 0 0;
+  }
+
+  .brand-intro .title-area {
+    margin: 0 0 20px 0;
+  }
+
+  .brand-intro span {
+    display: block;
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #9cbb28;
+  }
+  
+  .brand-intro img {
+    width: 200px;
+  }
+
+  .brand-intro h3 {
+    font-size: 30px;
+  }
+  
+  .brand-intro .desc {
+    color: #636363;
+  }
+
+  .brand-intro .desc br {
+    display: none;
+  }
+  
+  .brand-intro .more-area {
+    margin: 20px 0 0 0;
+  }
+
+  .brand-intro .more {
+    padding: 0 24px 4px 0;
+    font-size: 14px;
+  }
+
+  .brand-intro .list-area {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 0) {
+  body {
+    min-width: 320px;
+  }
+
+  .brand-intro {
+    padding: 40px 0;
+  }
+
+  .content-inner {
+    padding: 0 10px;
+  }
+
+  .brand-intro .content-inner {
+    position: static;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    height: auto;
+  }
+
+  .brand-intro .product {
+    margin: 0;
+  }
+
+  .brand-intro .product img {
+    width: 100%;
+  }
+
+  .brand-intro .content {
+    position: static;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    padding: 0;
+    margin: 48px 0 0 0;
+  }
+
+  .brand-intro .title-area {
+    margin: 0 0 20px 0;
+  }
+
+  .brand-intro span {
+    display: block;
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #9cbb28;
+  }
+  
+  .brand-intro img {
+    width: 200px;
+  }
+
+  .brand-intro h3 {
+    font-size: 30px;
+  }
+  
+  .brand-intro .desc {
+    color: #636363;
+  }
+
+  .brand-intro .desc br {
+    display: none;
+  }
+  
+  .brand-intro .more-area {
+    margin: 20px 0 0 0;
+  }
+
+  .brand-intro .more {
+    padding: 0 24px 4px 0;
+    font-size: 14px;
+  }
+
+  .brand-intro .list-area {
+    display: none;
+  }
+}
