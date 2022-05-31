@@ -26,6 +26,8 @@
 
 ## main(contents)
 
+- [정식품 간단요리사](https://wangkodok.github.io/Responsive-Web-Publishing/main-part-7/index.html "정식품 간단요리사")
+
 - [메타커머스](https://wangkodok.github.io/Responsive-Web-Publishing/main-part-6/index.html "메타커머스")
 
 - [KOTRA 해외시장뉴스](https://wangkodok.github.io/Responsive-Web-Publishing/main-part-5/index.html "KOTRA 해외시장뉴스")
