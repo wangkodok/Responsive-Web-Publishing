@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+h3 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.content-inner {
+  max-width: 1140px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
